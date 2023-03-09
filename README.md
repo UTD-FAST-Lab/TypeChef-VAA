@@ -1,3 +1,10 @@
+# Instructions
+
+1. Copy [sbt_repositories](./sbt_repositories) to `~/.sbt/repositories`.
+2. Run [publish.sh](./publish.sh).
+
+So far I have only tested this with Java 1.8.
+
 TypeChef
 ========
 
