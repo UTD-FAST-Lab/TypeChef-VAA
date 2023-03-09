@@ -66,7 +66,8 @@ object BuildSettings {
                 else
                     Some("releases" at nexus + "service/local/staging/deploy/maven2")
         },
-        publishMavenStyle := true,
+        publishMavenStyle := false,
+        resolvers += Resolver.file("local", file(Path.userHome.absolutePath + "/.ivy2/local"))(Resolver.ivyStylePatterns),
         publishArtifact in Test := false,
         pomIncludeRepository := {
             _ => false
